@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular de Prezență</title>
+</head>
+<body>
+    <h1>Introduceți numele</h1>
+    <form action="{{ url_for('submit_names') }}" method="post">
+        <input type="text" name="name" placeholder="Introduceți numele" required>
+        <input type="submit" value="Trimite">
+    </form>
+    <a href="/">Înapoi la pagina principală</a>
+</body>
+</html>
